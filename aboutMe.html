@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="contactdetails.html">Contact Me</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <div class="container">
+        <h1>Who is Keenan Husselmann...?</h1>
+        <h2>Welcome to my webpage! </h2>
+        <p>
+           I am a second-year computer science student specializing in software development. 
+           I enjoy problem-solving and working on various tech projects.
+        </p>
+    </div>
+    <style>
+
+        /* Wrapper to center the banner */
+        .banner-wrapper {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;
+            width: 100%;
+        }
+
+        .banner {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%; /* Optional width to control the size */
+    margin: 0 auto; /* Center the banner horizontally within its parent */
+}
+
+        .banner img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+        }
+
+        .banner p {
+            font-size: 40px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title -->
+    <h1 style="font-size: 48px;margin:50px;">My Favorite Things</h1>
+
+    <!-- Image with Description -->
+    <p>~Freshly Roasted Coffee Beans~</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/220px-Roasted_coffee_beans.jpg" alt="Fresh roasted  coffee beans" style="width: 400px; height: 400px;margin: 10px;">
+   
+    <!-- Clickable Link -->
+    <p><a href="https://www.adivedanatural.com/blogs/blog-posts/coffee-beans-myths-the-aroma-to-reset-your-sense-of-smell" target="_blank">>>>Click here to visit my favorite website!</a></p>
+
+    <!-- Banner Ad -->
+    <div class="banner" onclick="changeAd()">Click Me for a new ad!</div>
+    
+    <h2>My Favorite Jam</h2>
+    <p>This is one of my favorite songs!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/32HANv-bdJs" 
+        title="YouTube video player" frameborder="10" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</head>
+<body>
+    <script>
+   function changeAd() {
+            // Set new image and text content in the banner
+            document.querySelector('.banner').innerHTML = `
+                <div style="text-align: center;">
+                    <p style="font-size: 40px; color: black;">Try our new coffee specials!</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Latte_art.jpg/800px-Latte_art.jpg" 
+                    alt="Ad Image" style="width:150px; height:150px;">
+                </div>`;
+            document.querySelector('.banner').style.backgroundColor = 'white'; // Change background color
+            document.querySelector('.banner').style.color = 'black'; // Change text color for better visibility
+        }
+    </script>
+        <footer>
+            &copy; Copyright 2024 Keenan Husselmann
+        </footer>
+</body>
+</html>

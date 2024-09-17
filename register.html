@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutMe.html">About Us</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="contactdetails.html">Contact</a>
+    </nav>
+
+    <!-- Registration Form -->
+    <div class="container">
+        <h1>Register</h1>
+        <form action="register_process.php" method="POST">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" class="form-control" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" class="form-control" id="email" name="email" required><br><br>
+
+            <label for="username">Username:</label><br>
+            <input type="text" class="form-control" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" class="form-control" id="password" name="password" required><br><br>
+
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required><br><br>
+
+            <button type="submit" class="btn btn-primary" >Register</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; Copyright 2024 Keenan Husselmann
+    </footer>
+    
+  
+</body>
+</html>

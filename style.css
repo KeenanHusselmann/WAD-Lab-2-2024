@@ -1,0 +1,67 @@
+
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 5;
+            justify-content: center;
+            align-items: center;
+            height: 180vh; /* Full viewport height */
+            text-align: center; /* Center-aligns text inside the body */
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2e0066;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blog Post Style */
+        .blog-post {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .blog-post h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .blog-post p.subtitle {
+            font-style: italic;
+            color: gray;
+            margin-bottom: 15px;
+        }
+
+        .blog-post p.content {
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2e0066;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+  
